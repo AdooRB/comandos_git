@@ -9,3 +9,13 @@ git commit -m "Descripción"     ->  Commitar los cambios realizados por "git ad
 git log                         ->  Ver el historial de commits
 git status                      ->  Ver si hay un cambio en el repositorio git 
 git diff                        ->  Verifica los cambios realizados
+
+git show
+git log --oneline
+
+git checkout <id commit>
+
+git stash
+git stash clear
+git stash lis
+git stash apply
