@@ -19,3 +19,6 @@ git stash
 git stash clear
 git stash lis
 git stash apply
+
+git merge
+git branch
