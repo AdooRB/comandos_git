@@ -1,3 +1,8 @@
+COMANDOS DE CONFIGURACIÓN INICAL
+git config --global user.name <"Nombre">    ->  Asigna un nombre de usuario
+git config --global user.email <"correo">   ->  Asigna el correo quien manipula git
+git config --list               ->  Muestra la lista de parámetros de configuración
+
 git init                        ->  Inicializar el repositorio git
 
 git add <Nombre del archivo>    ->  Añadir archivo al stading
