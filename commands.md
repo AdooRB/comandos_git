@@ -17,27 +17,34 @@ ls                              ->  Muestra los archivos y carpetas dentro de un
 ls -a                           ->  Muestra todos los archivos y carpetas uncluyendo los ocultos
 clear                           ->  Limpia la terninal
 
+COMANDOS DE REPOSITORIO
 git init                        ->  Inicializar el repositorio git
 
-git add <Nombre del archivo>    ->  Añadir archivo al stading
-git add --all                   ->  Añadir todos los archivos al stading 
-git add -A
-git add .
+git add <Nombre del archivo>    ->  Añade archivo al staging
+    git add *.js                ->  Añade todos los archivos .js con cambios al staging (.js es un ejemplo)
+    git add src/component-*     ->  Agrega todo los archivos que empiecen con el patron "src/component-"
+    git add --all               ->  Añade todos los archivos al staging 
+    git add -A                  ->  Agrega todos los archivos con cambios en el proyecto
+    git add .                   ->  Agrega los cambios de todos los archivos a la dirección actual
+    git add -u                  ->  Agrega todo los archivos modificado o eliminados
+
+    git reset                   ->  Devuelve cambios en archivos a la zona de trabajo (lo saca del staging)
+
 git commit -m "Descripción"     ->  Commitar los cambios realizados por "git add"
 
-git log                         ->  Ver el historial de commits
 git status                      ->  Ver si hay un cambio en el repositorio git 
 git diff                        ->  Verifica los cambios realizados
 
-git show
-git log --oneline
+git show <id commit>            ->  Mostrar el proyecto (archivo) en cada commit
+git log                         ->  Ver el historial de commits de forma extensa
+    git log --oneline               ->  Ver el histrial de los commits en una sola línea
 
-git checkout <id commit>
+git checkout <id commit - branch>   ->  Ir a un commit o branch en específico.
 
-git stash
-git stash clear
-git stash lis
-git stash apply
+git stash                       ->  Crea una instancia donde se almacena los cambios dentro del staging
+    git stash clear             ->  Elimina la instancia
+    git stash list              ->  Mustra las intancias creadas
+    git stash apply <isntancia stash>   ->  Muestra la lineas almacendas en la instancia
 
-git merge
-git branch
+git branch                      ->  Muestra una lista de las branches creadas
+git merge                       ->  FusioNa los cambias de una branch a otra
