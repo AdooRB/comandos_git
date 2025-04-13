@@ -3,6 +3,12 @@ git config --global user.name <"Nombre">    ->  Asigna un nombre de usuario
 git config --global user.email <"correo">   ->  Asigna el correo quien manipula git
 git config --list               ->  Muestra la lista de parámetros de configuración
 
+CONFIGURACION SSH KEYS
+ssh-keygen -t ed25519 -C "comentario"   ->  Genera una llave sshh
+eval "$(ssh-agen -s)            ->  inicializa la interfaz ssh para gestionar las keys
+ssh-add <~/.ssh/id_ed25519>     ->  Añade la key ssh al agen
+clip < ~/.ssh/id_ed25519.pub    ->  Copia la llave ssh al portapapeles
+
 git init                        ->  Inicializar el repositorio git
 
 git add <Nombre del archivo>    ->  Añadir archivo al stading
