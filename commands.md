@@ -20,6 +20,11 @@ clear                           ->  Limpia la terninal
 COMANDOS DE REPOSITORIO
 git init                        ->  Inicializar el repositorio git
 
+git status                      ->  Ver si hay un cambio en el repositorio git 
+
+git log                         ->  Ver el historial de commits de forma extensa
+    git log --oneline           ->  Ver el histrial de los commits en una sola línea
+
 git add <Nombre del archivo>    ->  Añade archivo al staging
     git add *.js                ->  Añade todos los archivos .js con cambios al staging (.js es un ejemplo)
     git add src/component-*     ->  Agrega todo los archivos que empiecen con el patron "src/component-"
@@ -28,16 +33,14 @@ git add <Nombre del archivo>    ->  Añade archivo al staging
     git add .                   ->  Agrega los cambios de todos los archivos a la dirección actual
     git add -u                  ->  Agrega todo los archivos modificado o eliminados
 
-    git reset                   ->  Devuelve cambios en archivos a la zona de trabajo (lo saca del staging)
+git reset                       ->  Devuelve cambios en archivos a la zona de trabajo (lo saca del staging)
 
 git commit -m "Descripción"     ->  Commitar los cambios realizados por "git add"
 
-git status                      ->  Ver si hay un cambio en el repositorio git 
+git pull
 git diff                        ->  Verifica los cambios realizados
 
 git show <id commit>            ->  Mostrar el proyecto (archivo) en cada commit
-git log                         ->  Ver el historial de commits de forma extensa
-    git log --oneline               ->  Ver el histrial de los commits en una sola línea
 
 git checkout <id commit - branch>   ->  Ir a un commit o branch en específico.
 
@@ -47,4 +50,14 @@ git stash                       ->  Crea una instancia donde se almacena los cam
     git stash apply <isntancia stash>   ->  Muestra la lineas almacendas en la instancia
 
 git branch                      ->  Muestra una lista de las branches creadas
+git switch -c <nombre de la rama>   ->  Crear nueva rama
+git branch -D <nombre de la rama>   ->  Eliminar rama
+git switch <nombre de la rama>  ->  Navegar tu area de trabajo a otra rama
 git merge                       ->  FusioNa los cambias de una branch a otra
+
+git remote add origin <dirección de GitHub>     -> Vinvula el repositorio local a GitHub
+git branch -M main              ->  Cambio de nombre de la rama Master a Main
+git push -u origin main         ->  Actualiza los cambios realiados al repositorio remoto, asocia la rama "main" para enviar los cambios
+git pull                        ->  Actualiza el repositorio local con respecto al remoto
+
+git clone   <URL HTTP - SHH>    ->  Clona el repositorio remoto
