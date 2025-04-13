@@ -9,6 +9,14 @@ eval "$(ssh-agen -s)            ->  inicializa la interfaz ssh para gestionar la
 ssh-add <~/.ssh/id_ed25519>     ->  Añade la key ssh al agen
 clip < ~/.ssh/id_ed25519.pub    ->  Copia la llave ssh al portapapeles
 
+COMANDOS DE TERMINAL LINUX
+mkdir <nombre de carpeta>       ->  Crea carpeta
+cd  <nombre de la carpeta>      ->  Ir a una carpeta
+touch   <nombre del arcivo>     ->  Crea un archivo
+ls                              ->  Muestra los archivos y carpetas dentro de una carpeta
+ls -a                           ->  Muestra todos los archivos y carpetas uncluyendo los ocultos
+clear                           ->  Limpia la terninal
+
 git init                        ->  Inicializar el repositorio git
 
 git add <Nombre del archivo>    ->  Añadir archivo al stading
