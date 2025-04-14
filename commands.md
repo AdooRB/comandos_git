@@ -3,6 +3,11 @@ git config --global user.name <"Nombre">    ->  Asigna un nombre de usuario
 git config --global user.email <"correo">   ->  Asigna el correo quien manipula git
 git config --list               ->  Muestra la lista de parámetros de configuración
 
+CONFIGURACIÓN DE COLOR DE TERMINAL
+git config color.status.branch <color>      ->  Cambio de color del texto de branch
+git config color.status.added <color>       ->  Cambio de color del texto de added
+git config color.status.untracked " <color> blond"  ->  Cambio de color del texto en blond de los cambios del área de trabajo
+
 CONFIGURACION SSH KEYS
 ssh-keygen -t ed25519 -C "comentario"   ->  Genera una llave sshh
 eval "$(ssh-agen -s)            ->  inicializa la interfaz ssh para gestionar las keys
