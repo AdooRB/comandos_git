@@ -53,6 +53,10 @@ git stash                       ->  Crea una instancia donde se almacena los cam
     git stash clear             ->  Elimina la instancia
     git stash list              ->  Mustra las intancias creadas
     git stash apply <isntancia stash>   ->  Muestra la lineas almacendas en la instancia
+    git stash pop               ->  Restablece los cambios guardados del stash
+    git stash pop <id del stash>    ->  Muestra los cambios guardados en el stash
+    git stash save <nombre>     ->  Crea la istancia stash y lo nombra
+    git stash --include-untracked   ->  Agrega en el stash archivos nuevos no enlazados en git
 
 git branch                      ->  Muestra una lista de las branches creadas
 git switch -c <nombre de la rama>   ->  Crear nueva rama
